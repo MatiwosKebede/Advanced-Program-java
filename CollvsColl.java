@@ -14,10 +14,22 @@ public class CollvsColl{
 		nameList.add("baba");
 		nameList.add("dada");
 		nameList.add("mama");
-		System.out.println("name added to name ArrayList");
+		System.out.println("\nname added to name ArrayList");
 		for(String name : nameList)
 			System.out.println(name);
-
+		Collections.sort(nameList);
+		System.out.println("\nnameList is sorted");
+		for(String name : nameList)
+			System.out.print(name + ", ");
+		Collections.reverse(nameList);
+		System.out.println("\nnameList is reversed there order");
+		for(String name : nameList)
+			System.out.print(name + ", ");
+		Collections.shuffle(nameList);
+		System.out.println("\nnameList order is shuffled");
+		for(String name : nameList)
+			System.out.print(name + ", ");
 
 	}
+
 }
