@@ -22,8 +22,21 @@ public class practice1{
 	System.out.println("to print size of arraylist size: " +proName.size());
 	System.out.println("check if C# exist: " + proName.contains("C#"));
 	System.out.println("check if java exist: " + proName.contains("java"));
+	System.out.println("most common iteration");
+	for(String name : proName)
+		System.out.println(name);
+	
+	System.out.println("iteration using Iterator");
+	
+	Iterator<String> it = proName.iterator();
+	while(it.hasNext()) 	
+		System.out.println(it.next());	
 
-
+	System.out.println("list all name using index");	
+	for(int i = 0; i < proName.size(); i++)
+		System.out.println(proName.get(i));
 
 	}
+	
+
 }
