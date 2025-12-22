@@ -47,3 +47,19 @@ synchrnoized( object){
 	// statement
 } // end of synchrnoization
 
+
+// declear method with synchronized 
+import java.util.concurrent.lock;
+synchronized void display(String mgs){
+
+
+//synchronized block inside method for specific block
+synchronized (object reference expression){
+
+  } //synchronized block
+
+
+
+} // is synchrnoized method
+
+
